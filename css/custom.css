@@ -1,0 +1,182 @@
+body {
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+    background-color: #f9f8f6;
+    color: #333;
+}
+
+.extra-space {
+    margin-bottom: 24px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+nav {
+    background-color: #4a4a4a;
+    z-index: 1000;
+}
+
+nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.main-layout {
+    display: grid;
+    /* Hero section width */
+    grid-template-columns: 35% auto;
+    /* Full viewport height minus navbar */
+    height: calc(100vh - 56px);
+}
+
+.hero-section {
+    /* background-color: #5a7d9a; */
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.content-wrapper {
+    padding: 5rem 3rem;
+    overflow-y: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-list .badge {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.0rem;
+    margin: 0.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #5a7d9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero-section {
+    /* Navbar == 56px */
+    padding-top: 56px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .main-layout {
+        display: block;
+    }
+
+    .hero-section {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        padding: 3rem 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+}
+
+#publications {
+    margin-top: 2rem;
+}
+
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.publication-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.publication-details {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.publication-details em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.read-more {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
